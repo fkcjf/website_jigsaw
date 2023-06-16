@@ -5,6 +5,10 @@ mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build');
 
 mix.jigsaw()
+    .copyDirectory([
+      'node_modules/@fontsource-variable/open-sans/files',
+      'node_modules/@fontsource-variable/montserrat/files'
+    ], 'source/assets/build/css/files')
     .js('source/_assets/js/main.js', 'js').vue()
     .css('source/_assets/css/main.css', 'css/main.css', [
         require('postcss-import'),

@@ -14,7 +14,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['"Nunito Sans"', ...defaults.fontFamily.sans],
+                sans: ['"Open Sans Variable"', ...defaults.fontFamily.sans],
+                headings: ['"Montserrat Variable"', ...defaults.fontFamily.sans],
             },
             lineHeight: {
                 normal: '1.6',
