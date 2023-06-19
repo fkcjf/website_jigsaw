@@ -17,6 +17,7 @@ mix.jigsaw()
     ])
     .options({ processCssUrls: false })
     .browserSync({
+        open: false,
         server: 'build_local',
         files: ['build_local/**'],
     })
