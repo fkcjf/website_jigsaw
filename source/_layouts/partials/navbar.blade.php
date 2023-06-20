@@ -12,12 +12,12 @@
             <div id="vue-search" class="flex flex-1 justify-end items-center">
                 <search></search>
 
-                <x-menu class="" />{{-- :page="$page" --}}
+                <x-menu :page="$page" class="" />
 
                 <x-menu-toggle-button class="ml-4" :toggleId="'js-nav-menu'" />
             </div>
         </div>
     </nav>
-    <x-TogglableMenu :toggleId="'js-nav-menu'" />{{-- :page="$page" --}}
+    <x-TogglableMenu :page="$page" :toggleId="'js-nav-menu'" class="" />
 </div>
 <div class="w-full h-16">{{-- placeholder for above fixed item --}}<div>
