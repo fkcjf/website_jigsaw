@@ -1,4 +1,4 @@
-<button class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 px-5 rounded-full lg:hidden focus:outline-none"
+<button {{ $attributes->merge(['class' => 'flex justify-center items-center bg-blue-500 border border-blue-500 h-10 px-5 rounded-full focus:outline-none']) }}
     onclick="navMenu.toggle()"
 >
     <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@
 <script>
     const navMenu = {
         toggle() {
-            const menu = document.getElementById('js-nav-menu');
+            const menu = document.getElementById('{{ $toggleId }}');
             menu.classList.toggle('hidden');
             menu.classList.toggle('lg:block');
             document.getElementById('js-nav-menu-hide').classList.toggle('hidden');

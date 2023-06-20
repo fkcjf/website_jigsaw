@@ -1,4 +1,4 @@
-@extends('_layouts.main')
+@extends('_layouts.main', ['page' => $page])
 
 @php
     $page->type = 'article';
