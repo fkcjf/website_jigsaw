@@ -6,6 +6,7 @@
     "autoload": {
         "psr-4": {
             "App\\Listeners\\": "listeners/",
+            "Helpers\\": "helpers/",
             "Components\\": "components/"
         }
     }
