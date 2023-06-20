@@ -4,14 +4,14 @@
             <a
                 title="{{ $page->siteName }} Blog"
                 href="/blog"
-                class="block mt-0 mb-4 text-sm no-underline {{-- $page->isActive('/blog') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' --}}"
+                class="block mt-0 mb-4 text-sm no-underline {{ $isActive('/blog') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
             >Blog</a>
         </li>
         <li class="pl-4">
             <a
                 title="{{ $page->siteName }} About"
                 href="/about"
-                class="block mt-0 mb-4 text-sm no-underline {{-- $page->isActive('/about') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' --}}"
+                class="block mt-0 mb-4 text-sm no-underline {{ $isActive('/about') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
             >About</a>
         </li>
     </ul>
